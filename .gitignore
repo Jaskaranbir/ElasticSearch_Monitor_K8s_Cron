@@ -1,0 +1,24 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/.build/
+/.history/
+/out/
+/.idea/
+/.vscode/
+/.build_test/
+/rubycritic/
+/.swp/
+
+# rspec failure tracking
+.rspec_status
+
+spec/result.xml
+build.Dockerfile

@@ -1,0 +1,15 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: ES_Monitor
+spec:
+  # Every Minute
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: es_monitor
+            image: ruby # Replace with your correct image here
+          restartPolicy: OnFailure
