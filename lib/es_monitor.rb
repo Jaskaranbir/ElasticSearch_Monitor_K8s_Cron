@@ -9,7 +9,7 @@ require_relative './monitor_engine/monitor_engine'
 module ESMonitor
   class Monitor
     def initialize()
-      url = 'http://localhost:9200'
+      url = ENV['ELASTIC_URL'] || 'http://localhost:9200'
 
       @es_client = Faraday.new({ url: url })
       monitor_indices()
